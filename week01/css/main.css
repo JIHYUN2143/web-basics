@@ -1,8 +1,38 @@
-p {
-    /* 폰트 크기 설정 */
-    font-size: 60px;
-    /* 폰트 굵기 설정 */
+body {
+    padding: 5rem;
+    white-space: nowrap;
+    background-color: aliceblue;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    width: 50%;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    color: lightpink;
+}
+
+#title {
+    text-align: left;
+    font-size: 3rem;
     font-weight: 800;
-    /* 텍스트 가운데 정렬 */
-    text-align: center;
+}
+
+.text {
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: rgb(59, 33, 13);
+    font-weight: 600;
+}
+
+.caluse {
+    margin-bottom: 4rem;
 }
