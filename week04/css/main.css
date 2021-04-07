@@ -1,0 +1,58 @@
+/*COMMON */
+
+body {
+    background: #f6f5f0
+}
+
+.material-icons {
+    color: #f6f5f0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    background : #000;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+header>.material-icons#btn--open {
+   display: block; 
+}
+
+header>.material-icons#btn--close {
+    display: none;
+}
+
+/* NAV */
+
+nav {
+    top: 60px;
+    width: 300px;
+    height: 100%;
+    background: blueviolet;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 045s;
+
+}
+
+/* SIDE NAV */
+
+nav {
+    position: absolute;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 300px;
+    background: #000;
+    transform: translateX(-100%);
+}
