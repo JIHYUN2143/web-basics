@@ -1,14 +1,19 @@
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    position: relative;
+    /* position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* width: 1008px; */
+    align-items: center; */
+    width: 1008px;
+    margin: 0 auto;
 }
 
 /* header */
+header {
+    height: 180px;
+}
+
 
 .header1{
     display: flex;
@@ -112,6 +117,7 @@ a:visited {
     position: absolute;
     left: 285px;
     padding-top: 8px;
+    cursor: pointer;
 }
 
 .header2_right1 > img {
@@ -222,7 +228,101 @@ a:visited {
 /* main */
 
 main {
+    background: lightyellow;
+    height: 965px;
+}
+
+#contents {
+    padding: 30px 0px 0px;
+    background-color: lightblue;
+
+}
+
+.newalbum {
     position: relative;
-    /* height: calc(965px - 176px); */
-    background: lightblue;
+    float: left;
+    width: 475px;
+    height: 340px;
+    background-color: lightcoral;
+}
+
+.promotion {
+    position: relative;
+    float: left;
+    width: 235px;
+    height: 340px;
+    background-color: lightgreen;
+    padding-left: 10px;
+
+}
+
+.login {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 115px;
+    background-color: #666;
+    padding-top: 25px;
+}
+
+.event {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 190px;
+    background-color: blue;
+    padding-top: 10px;
+}
+
+.hottrend {
+    position: relative;
+    float: left;
+    width: 705px;
+    height: 470px;
+    background-color: blueviolet;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+.melonchart {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 470px;
+    background-color: goldenrod;
+    margin-top: 32px;
+    margin-left: 23px;
+}
+
+#notice {
+    width: 1008px;
+    height: 42px;
+    background-color: plum;
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    height: 205px;
+    background: navy;
+    margin: 0px 20px;
+}
+
+.footer_menu1 {
+    height: 52px;
+    background-color: skyblue;
+
+}
+
+.footer_menu2 {
+    height: 14px;
+    margin-top: 26px;
+    background-color: yellowgreen;
+}
+
+.info {
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 54px;
+    background-color: mintcream;
 }
