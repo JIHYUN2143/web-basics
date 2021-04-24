@@ -163,13 +163,15 @@ a:visited {
 
 /* 슬라이드 차트에 마우스 갖다대면 슬라이드 차트 사라지고 급상승 1위부터 10위까지 보이는(chart) 표 보이게 하기 */
 
-/* 이벤트배너 만들기 */
+/* 광고배너 만들기 (사진삽입) */
 .header2_right3 {
     width: 275px;
     height: 75px;
     float: right;
     margin-top: -50px;
-    background: lightpink;
+    border: 1px solid #e0e0e0;
+    background-color: #fbfbfb;
+    box-sizing: border-box;
 }
 
 
@@ -228,13 +230,13 @@ a:visited {
 /* main */
 
 main {
-    background: lightyellow;
+    background: #FFF;
     height: 965px;
 }
 
 #contents {
     padding: 30px 0px 0px;
-    background-color: lightblue;
+    background-color: #fff;
 
 }
 
@@ -243,17 +245,92 @@ main {
     float: left;
     width: 475px;
     height: 340px;
-    background-color: lightcoral;
+    background-color: #fff;
+    overflow: hidden;
 }
+
+.newalbum span {
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 800;
+}
+
+/* 새앨범 페이지 버튼 만들기 */
+
+.newalbum .section {
+    width: 200px;
+    height: 15px;
+    float: right;
+}
+
+.newalbum ul {
+    overflow: hidden;
+    float: left;
+}
+
+.newalbum ul li {
+    float: left;
+    padding: 0px 8px;
+    font-size: 85%;
+}
+
+.page {
+    overflow: hidden;
+    float: right;
+}
+
+.newalbum .pagenumber {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+
+.newalbum .page_btn {
+    margin-left: 5px;
+    display: block;
+    width: 38px;
+    height: 15px;
+    float: right;
+}
+
+/* 앨범 사진 6분할 넣기, 슬라이드 만들기 */
+
+.albumwrap {
+    width: 475px;
+    height: 325px;
+    background-color: #00d344;
+    margin-top: 10px;
+}
+
+.albumlist ul li {
+    display: block;
+    height: 155px;
+    width: 155px;
+}
+
 
 .promotion {
     position: relative;
     float: left;
     width: 235px;
     height: 340px;
-    background-color: lightgreen;
     padding-left: 10px;
 
+}
+
+.control {
+    width: 115px;
+    height: 15px;
+    overflow: hidden;
+    float: right;
+}
+
+.frame {
+    width: 235px;
+    height: 315px;
+    margin-top: 25px;
+    background-color: #00d344;
 }
 
 .login {
@@ -261,68 +338,288 @@ main {
     float: right;
     width: 280px;
     height: 115px;
-    background-color: #666;
-    padding-top: 25px;
+    background-color: #fbfbfb;
+    margin-top: 25px;
+    border: 1px solid #e0e0e0;;
+    box-sizing: border-box;
 }
+
+.loginwrap {
+    width: 246px;
+    height: 115px;
+    padding: 0px 17px;
+}
+
+.logintop {
+    height: 20px;
+    padding: 24px 0px 7px;
+    overflow: hidden;
+}
+
+.logintop p {
+    font-size: 12px;
+    color: #939393;
+}
+
+.logintop a{
+    font-size: 12px;
+    color: #818181;
+    float: right;
+    margin-top: -12px;
+}
+
+.loginbutton {
+    width: 244px;
+    height: 42px;
+    margin-top: -5px;
+    background-color: #00d344;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.loginbutton span {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/* 광고 사진 넣기 */
 
 .event {
     position: relative;
     float: right;
     width: 280px;
     height: 190px;
-    background-color: blue;
-    padding-top: 10px;
+    background-color: #fbfbfb;
+    margin-top: 10px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
 }
+
+
 
 .hottrend {
     position: relative;
     float: left;
     width: 705px;
     height: 470px;
-    background-color: blueviolet;
+    background-color: #fff;
     margin-top: 32px;
     margin-bottom: 50px;
 }
+
+.hotsection {
+    overflow: hidden;
+    float: left;
+    width: 705px;
+    height: 25px;
+}
+
+
+.hottrend1 {
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 800;
+}
+.hottrend2 {
+    
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* 핫트렌드 페이지 버튼 만들기 */
+
+.hotpage {
+    overflow: hidden;
+    float: right;
+}
+
+.hotpagenumber {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+
+.hotpage_btn {
+    display: block;
+    float: right;
+    margin-left: 5px;
+    width: 38px;
+    height: 15px;
+}
+
+/* 핫트렌드 6분할 넣기 */
+
+.hotwrap {
+    width: 705px;
+    height: 445px;
+    margin-top: 25px;
+    background-color: #00d344;
+}
+
 
 .melonchart {
     position: relative;
     float: right;
     width: 280px;
     height: 470px;
-    background-color: goldenrod;
+    background-color: #fff;
     margin-top: 32px;
     margin-left: 23px;
 }
 
+.chartsection {
+    overflow: hidden;
+    float: left;
+    width: 280px;
+    height: 25px;
+}
+
+.section1 {
+    float: left;
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 800;
+}
+
+.section2 {
+    float: right;
+    color: #888;
+    font-size: 12px;
+}
+
+.chartbox {
+    width: 280px;
+    height: 445px;
+    border: 1px solid #e0e0e0;
+    background-color: #fbfbfb;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+
+
 #notice {
     width: 1008px;
-    height: 42px;
-    background-color: plum;
+    height: 44px;
+    background-color: #fff;
     position: relative;
     overflow: hidden;
 }
 
+.notice_border1 {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.noticesection {
+    width: 1008px;
+    height: 18px;
+    margin: 11px 0px;
+}
+
+.section3 {
+    color: black;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.section4 {
+    color: #8a8a8a;
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+.section5 {
+    margin-left: 15px;
+    font-size: 13px;
+    color: #1a1a1a;
+}
+
+.notice_border2 {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
 footer {
     height: 205px;
-    background: navy;
+    background: #fff;
     margin: 0px 20px;
 }
 
 .footer_menu1 {
     height: 52px;
-    background-color: skyblue;
-
+    background-color: #fff;
 }
+
+.footer_menu1 ul {
+    overflow: hidden;
+    float: right;
+    padding: 16px 0px 0px;
+    
+}
+
+.footer_menu1 ul li {
+    float: left;
+    height: 20px;
+    margin-left: 22px;
+    font-size: 90%;
+    color: #666;
+    font-weight: 600;
+}
+
+.footer_menu1 ul :hover {
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
 
 .footer_menu2 {
     height: 14px;
     margin-top: 26px;
-    background-color: yellowgreen;
+    background-color: #fff;
+}
+
+.footer_menu2 ul {
+    overflow: hidden;
+    float: left;
+}
+
+.footer_menu2 ul li {
+    float: left;
+    color: #1a1a1a;
+    font-size: 80%;
+    margin-right: 6px;
+}
+
+.footer_menu2 ul :hover {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.footer_menu2 ul li :hover {
+    text-decoration: underline;
 }
 
 .info {
     height: 40px;
     margin-top: 20px;
     margin-bottom: 54px;
-    background-color: mintcream;
+    background-color:#FFF;
+}
+
+.info span {
+    font-size: 11px;
+    color: #909090;
+    padding-right: 8px;
 }
